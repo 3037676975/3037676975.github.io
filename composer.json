@@ -1,6 +1,0 @@
-{
-    "require": {
-        "aliyuncs/oss-sdk-php": "^2.3",
-        "phpoffice/phpexcel": "^1.8"
-    }
-}
