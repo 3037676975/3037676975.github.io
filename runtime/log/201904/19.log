@@ -1,0 +1,104 @@
+---------------------------------------------------------------
+[2019-04-19T22:20:50+08:00] ::1 GET localhost/sucai/public/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002205s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.070395s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_site` [ RunTime:0.185557s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` WHERE  `status` > 0 [ RunTime:0.000845s ]
+---------------------------------------------------------------
+[2019-04-19T22:20:52+08:00] ::1 GET localhost/sucai/public/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000994s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.031142s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[2019-04-19T22:20:52+08:00] ::1 GET localhost/sucai/public/admin/account/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000955s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.013887s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[2019-04-19T22:20:52+08:00] ::1 GET localhost/sucai/public/admin/account/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001106s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.015991s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000970s ]
+---------------------------------------------------------------
+[2019-04-19T22:20:57+08:00] ::1 POST localhost/sucai/public/admin/account/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000828s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.027262s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.087381s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `username` = 'admin' ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `last_time` = 1555683656 , `site_access` = '{\"1\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"2\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"3\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"4\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"5\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"6\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"7\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"8\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"9\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"10\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"11\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"12\":{\"day_used\":4,\"max_used\":4,\"day\":\"10\",\"all\":\"20\"},\"13\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"14\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"15\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"16\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"17\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"18\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"19\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"20\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"21\":{\"day_used\":0,\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"}}'  WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' [ RunTime:0.000656s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `site_access` = '{\"1\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"2\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"3\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"4\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"5\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"6\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"7\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"8\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"9\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"10\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"11\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"12\":{\"day_used\":\"0\",\"max_used\":4,\"day\":\"10\",\"all\":\"20\"},\"13\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"14\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"15\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"16\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"17\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"18\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"19\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"20\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"21\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"}}' , `reset_times` = 20190419  WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[2019-04-19T22:20:57+08:00] ::1 GET localhost/sucai/public/admin/index/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.019241s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.016060s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT version() as ver [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS FROM sucai [ RunTime:0.217677s ]
+---------------------------------------------------------------
+[2019-04-19T22:20:59+08:00] ::1 GET localhost/sucai/public/admin/site/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000920s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.020121s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.016596s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_site` [ RunTime:0.020694s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `web_site` LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` LIMIT 0,30 [ RunTime:0.000630s ]
+---------------------------------------------------------------
+[2019-04-19T22:21:03+08:00] ::1 GET localhost/sucai/public/admin/site/edit/site_id/12.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000848s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.017153s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.001323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.014545s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_site` [ RunTime:0.014333s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` WHERE  `site_id` = 12 LIMIT 1 [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[2019-04-19T22:21:25+08:00] ::1 POST localhost/sucai/public/admin/site/edit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000900s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.031320s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.016312s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_site` [ RunTime:0.013688s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` WHERE  `site_id` = 12 LIMIT 1 [ RunTime:0.002089s ]
+[ sql ] [ SQL ] UPDATE `web_site`  SET `cookies` = '[\"_csrf=IST3Ee-VoKW2UDMxRm9n8BJC0wIIZa0C; _index_user=%5B1625319%2C%22ZNq5CBLGAaX1KSKOCbEdhuO2ucuyh3Kb%22%2C2592000%5D; Hm_lvt_382f81c966395258f239157654081890=1554964958,1555419657,1555596542,1555683594; PHPSESSID=3ptf5vllmmasfq7dlbu4319828; auth_key=QHuEiNEc5zA80d3rFPpsGVCuzxhYDHeu; _csrf=tqR4SgFOZzIZ5EXvLGPbADZtgqUGY9i-; _index_user=%5B1625319%2C%22ZNq5CBLGAaX1KSKOCbEdhuO2ucuyh3Kb%22%2C2592000%5D; Hm_lpvt_382f81c966395258f239157654081890=1555683671\"]'  WHERE  `site_id` = 12 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[2019-04-19T22:21:27+08:00] ::1 GET localhost/sucai/public/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.023139s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.016442s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_site` [ RunTime:0.016016s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` WHERE  `status` > 0 [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[2019-04-19T22:21:28+08:00] ::1 GET localhost/sucai/public/admin/site/edit/site_id/12.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000760s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.023743s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.030199s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_site` [ RunTime:0.015489s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` WHERE  `site_id` = 12 LIMIT 1 [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[2019-04-19T22:21:54+08:00] ::1 POST localhost/sucai/public/index/index/parse.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000801s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.027921s ]
+[ sql ] [ SQL ] SELECT * FROM `member` WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' LIMIT 1 [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.012431s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `web_site` [ RunTime:0.014738s ]
+[ sql ] [ SQL ] SELECT * FROM `web_site` WHERE  `status` > 0 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `attach` [ RunTime:0.013562s ]
+[ sql ] [ SQL ] SELECT * FROM `attach` WHERE (  `site_id` = 12  AND `site_code_type` = ''  AND `site_code` = '33013'  AND `status` > 0 ) AND `attach`.`delete_time` = '0' [ RunTime:0.000586s ]
+[ sql ] [ SQL ] INSERT INTO `attach` (`site_id` , `request_url` , `site_code` , `filename` , `response_url` , `button_name` , `queue_error` , `status` , `create_ip` , `update_time` , `update_ip` , `local_file` , `create_time`) VALUES (12 , 'http://www.17sucai.com/pins/33013.html' , '33013' , '33013.zip' , 'http://www.17sucai.com/pins/down?id=33013&code=Mll%F7%F4%96%F314%17%E0%0D%C1%84%BD%935770d59eb73820c5bb01ad17e7f80bff6b0637aba6d89a313e4d501ee4c54dd6g%81%01%B8iNRM%21%82%7B%C9%3B%89%80g%60%96%9B%F4%0E%B2%DA%0Ep%0D%FDE%D4%2Ah%0B' , '立即下载' , '' , 1 , '::1' , 1555683713 , '::1' , '8453d690d8c8a3dd7f357a8dbba333b6.temp' , 1555683713) [ RunTime:0.002209s ]
+[ sql ] [ SQL ] UPDATE `attach`  SET `filename` = '5cb9d9832ee33.zip' , `status` = 2 , `savename` = '7d80bc10c7a297ad5eb252b446765213.zip' , `download_time` = '1.181905' , `filesize` = 270866 , `update_time` = 1555683714  WHERE (  `attach_id` = 17 ) AND `attach`.`delete_time` = '0' [ RunTime:0.001313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member_log` [ RunTime:0.041446s ]
+[ sql ] [ SQL ] INSERT INTO `member_log` (`uid` , `site_id` , `times` , `status` , `parse_url` , `create_ip` , `create_time`) VALUES (1 , 12 , 1 , 1 , 'http://www.17sucai.com/pins/33013.html' , '::1' , 1555683714) [ RunTime:0.001179s ]
+[ sql ] [ SQL ] UPDATE `member`  SET `site_access` = '{\"1\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"2\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"3\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"4\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"5\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"6\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"7\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"8\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"9\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"10\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"11\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"12\":{\"day_used\":1,\"max_used\":5,\"day\":\"10\",\"all\":\"20\"},\"13\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"14\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"15\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"16\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"17\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"18\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"19\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"20\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"},\"21\":{\"day_used\":\"0\",\"max_used\":\"0\",\"day\":\"10\",\"all\":\"20\"}}' , `parse_times` = 5  WHERE (  `uid` = 1 ) AND `member`.`delete_time` = '0' [ RunTime:0.001261s ]
