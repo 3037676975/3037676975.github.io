@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+[2019-04-18T22:08:59+08:00] ::1 GET localhost/sucai/public/admin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009117s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.204529s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000925s ]
+---------------------------------------------------------------
+[2019-04-18T22:08:59+08:00] ::1 GET localhost/sucai/public/admin/account/login.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010473s ] mysql:host=127.0.0.1;dbname=sucai;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `setting` [ RunTime:0.029630s ]
+[ sql ] [ SQL ] SELECT * FROM `setting` [ RunTime:0.000771s ]
